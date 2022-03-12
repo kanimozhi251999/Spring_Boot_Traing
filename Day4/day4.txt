@@ -1,0 +1,70 @@
+
+//ASSIGNMENT 1
+public interface Assigment1 {
+    //String s="good";
+    void day1(int n);
+}
+interface Assigment2 extends Assigment1{
+    void day2(String n);
+}
+interface Assignment3 extends Assigment2
+{
+    void day3(int a,String b);
+}
+
+
+
+class Det implements Assignment3
+{
+    public void day1(int a) {
+        //String s =;
+        System.out.println("Java Basics " +s);
+    }
+    public void day2(String b){
+        System.out.println("Mathod heandling");
+    }
+
+    public void day3(int c,String d)
+    {
+        System.out.println("Class and Object");
+    }
+}
+public class Assi {
+    public static void main(String[] args)
+    {
+        Det d=new Det();
+        d.day1(1);
+        d.day2("two");
+        d.day3(3,"three");
+    }
+}
+
+
+
+//ASSIGNMENT 2
+package Ex1;
+
+public class Assigment_day3{
+    protected void msg(){
+        System.out.println("Today Topics are Inheritance and interface");
+    }
+    private void msg2()
+    {
+    System.out.println("Day 4:Interface");
+    }
+}
+
+
+package Ex2;
+
+import Ex1.Assigment_day3;
+
+class Assi3 extends Assigment_day3 {
+    public static void main(String args[]){
+        Assi3 obj = new Assi3();
+        obj.msg();
+        //obj.msg2();
+    }
+}
+
+
